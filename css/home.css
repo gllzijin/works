@@ -2,9 +2,10 @@
 .clearfix:before,.clearfix:after{content:"";display:table;}
 .clearfix:after{clear:both;}
 a{text-decoration:none;}
+html{font-size: 10px;}
 header{
 	width: 100%;
-	height: 90px;	
+	/*height: 9rem;	*/
 	background-color: #55adb7;
 	position:fixed;
 	z-index: 3;
@@ -15,19 +16,19 @@ header{
 	
 }
 .header{
-	line-height: 90px;
+	line-height: 9rem;
 }
 header .logo{
 	font-family: ScriptC;
-	font-size: 60px;
+	font-size: 6rem;
 	font-weight: 600;
-	padding:0 150px;
+	padding:0 12.0939%;
 	float:left;
 	color:#fff;
 }
 header h2{
 	font-family: 中山行书百年纪念版;
-	font-size: 48px;
+	font-size: 4.8rem;
 	float:left;
 	font-weight: lighter;
 	color:#DCE3E4;
@@ -39,27 +40,26 @@ header h2{
 }
 .banner{
 	font-family: Arial;
-	padding:180px 0;
+	padding:18rem 0;
 	text-align: center;
 }
 .banner h1{
 	width: 40%;
-	font-size: 38px;
+	font-size: 3.8rem;
 	color:#e4e4e4;
 	text-transform:uppercase;
-	line-height: 1.5em;
-	letter-spacing:-2px;
+	line-height: 5.5rem;
 	font-weight: 600;
 	margin: 0 auto;
 }
 .banner a{
 	width: 13%;
 	display:block;
-	font-size: 22px;
+	font-size: 2.2rem;
 	color:#afb1b4;
-	border:3px solid #afb1b4;
-	padding:12px 15px;
-	margin:20px auto;
+	border:0.3rem solid #afb1b4;
+	padding:1.2rem 1.2354%;
+	margin:2rem auto;
 	border-radius:10px;
 }
 .banner a:hover{
@@ -68,21 +68,22 @@ header h2{
 }
 .second,.forth{background-color: #e0e0e0;}
 .content{
-	padding:80px 30px;
+	padding:8rem 2.2238%;
 }
 .content-top{
 	width: 26%;
-	margin:2px auto;
+	margin:2rem auto;
 }
 .top-left{width: 40%;float:left;}
 .top-left img{
 	width: 100%;
-	height: 120px;
+	height: auto;
+	max-width:300px;
 	border-radius: 50%;
 }
 .top-right{
 	float:right;
-	margin:24px 24px 0 0 ;
+	margin:2.4em 7.9983% 0 0 ;
 
 }
 .top-right h3{
@@ -92,13 +93,17 @@ header h2{
 	margin:5px;
 }
 .top-right img{
-	width: 82%;
-	height: 70px;
+	width: 100%;
+	height: auto;
+	max-width:127px;
 	margin-left:18px;
 }
 .content-center{
 	width: 80%;
 	margin:0 auto;
+}
+.content-center .study1 p{
+	font-size: 20px;
 }
 .display{
 	padding:10em 0 5em;
@@ -215,15 +220,14 @@ p.ever{
 	padding:5em 8em;
 }
 .message.hexagon_box h1 {
-   color: #24A95A;
+   	color: #24A95A;
     font-size: 2em;
     text-align: center;
 }
 .hexagon_box {
-          width: 499px;
+    width: 499px;
     height: 340px;
     background: #fff;
-
     position: relative;
     overflow: visible;
     box-sizing: border-box;
@@ -240,13 +244,13 @@ p.ever{
     border-top:86px solid #fff;
 }
 .hexagon_box:before {
-       content: "";
+    content: "";
     position: absolute;
     top: -86px;
     left: 0;
     width: 0;
     height: 0;
-       border-left: 247px solid transparent;
+    border-left: 247px solid transparent;
     border-right: 250px solid transparent;
     border-bottom: 86px solid #fff;
 }
@@ -254,8 +258,7 @@ form {
     padding: 2em 4em;
 }
 form  input[type="text"],form input[type="password"]{
-
-          width: 82.5%;
+    width: 82.5%;
     padding: 1em 2em;
     color: #999;
     font-size: 16px;
@@ -264,10 +267,10 @@ form  input[type="text"],form input[type="password"]{
     border: none;
     /*font-family: 'Raleway', sans-serif;*/
     font-family: Arial;
-  background: #D3D3D3;
+  	background: #D3D3D3;
     float: left;
-	    border: 1px solid #DED6D6;
-	    margin-left: 3em;
+	border: 1px solid #DED6D6;
+	margin-left: 3em;
     margin-bottom: 3%;
     border-radius: 0.2em;
     -o-border-radius: 0.2em;
