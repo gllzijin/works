@@ -1,0 +1,135 @@
+.header{
+	background-color: #000;}
+.inner{
+	margin:0 auto;
+}
+.header-inner{
+	width: 970px;
+    padding: 25px 0px;
+    position:relative;
+}
+
+.header h1{
+	color:#d33b00;
+	font-size:46px;
+	font-weight:bold;
+	text-shadow:-1px -2px 5px #e97b00;
+	position:absolute;
+	top:48px;left:110px;
+
+}
+.header h1 span{
+	color:#aeaeae;
+	text-shadow:-1px -2px 5px #f0f0f0;
+}
+.header ul{
+	width: 478px;
+    position:absolute;
+    top:69px;left:519px;
+}
+.header li{
+	float:left;
+	padding-right: 28px;
+	list-style:none;
+}
+p{
+	color:#7f7f7f;
+	font-family:Lao UI;
+	font-size:15px;
+	
+	line-height:1.5em;
+}
+
+a{
+	text-decoration:none;
+	color:#7f7f7f;
+	font-family: Lao UI;
+	font-size:13px;
+	/*font-weight:bold;*/
+}
+a:hover{
+	color:#cc2700;
+} 
+ .submit{
+    	margin-top:20px;
+    	background-color: #e36000;
+    	width: 106px;height:41px;
+    	border-radius:10px;
+    }
+.submit a{
+    display:block;
+    text-align: center;
+    color:#fff;
+    font-size: 26px;
+    text-shadow:-1px -2px 5px #b7501c;
+    font-weight: lighter;
+}
+.main{
+    background-image: url(../images/main_03.gif);
+}
+.main-inner{
+	width: 940px;
+	background-color: #1e2020;
+    overflow: hidden;
+}
+.main-top{
+    padding-top:40px;
+    overflow: hidden;
+}
+.main-top li{
+    float:left;
+    list-style:none;
+}
+.join,.spring{
+	padding-right:20px;
+}
+.content{
+	width: 600px;
+    float: left;
+}
+.content h1{
+    font-size: 26px;
+    color:#fff;
+    padding-top:52px; 
+}
+.sidebar{
+	width: 300px;
+	float:right;
+}
+.sidebar-top{
+    margin-top: 40px;
+    margin-bottom: 20px;
+    padding-left: 22px;
+    background-image: url(../images/title_03.gif);
+    width: 278px;height: 48px;
+    border-radius:5px;
+    font-size: 20px;
+    color:#fff;
+    line-height: 48px;
+}
+.footer{
+	background-image: url(../images/footer_bg_03.gif);
+}
+.footer-inner{
+	position:relative;
+	width: 798px;
+	clear:both;
+}
+.footer-inner p{
+	padding-top: 38px;
+    padding-bottom: 12px;
+    text-indent: 5em;
+    font-size: 16px;
+}
+.footer-inner span{
+	color:#c5220d;
+    	text-decoration:underline;
+}
+.footer-inner ul{
+	position:absolute;
+	top:49px;left:653px;
+}
+.footer-inner li{
+	float:left;
+	padding-right: 10px;
+}

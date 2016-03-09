@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>短租网</title>
+	<link rel="stylesheet" type="text/css" href="fa/css/font-awesome.min.css">
+	<style>
+	*{margin:0;padding:0;}
+body{
+
+      min-width: 1240;
+	  font-family:arial,"Microsoft Yahei","Hiragino Sans GB",sans-serif;
+}
+.header{
+	height: 60px;
+	background-color: #ffe0b2;
+}
+.logo{
+	margin-left: 100px;
+	float:left;
+}
+.logo img{
+	width: 100px;
+	height: 59px;
+}
+.title{
+	float:left;
+}
+.name{
+	color: #FF8F00;
+	padding-top:10px;
+}
+.navbar{
+	list-style: none;
+	display:block;
+	padding-left: 700px;
+}
+a{
+	text-decoration:none;
+	color:#000;
+}
+.show{
+    background-color: #EEEEEE;
+    color:#FF3300;
+   
+   
+}
+.na{   
+	width:70px;
+	height: 50px;
+	text-align:center;
+	line-height: 50px;
+    float:left;
+    margin-left: 10px; 
+      margin-top:5px; 
+      border-radius:5px;
+}
+.na:hover{
+	color:#FF3300;
+	background-color:#EEEEEE;
+
+	
+}
+.in{
+	width: 60px;
+	height: 36px;
+	text-align:center;
+	line-height: 35px;
+	background-color: #E0E0E0;
+	float:left;
+	border-radius:5px;
+	margin-left:45px;
+	margin-top:12px;
+}
+
+
+.in:hover{
+	background-color: #FF3300;	
+}
+.na-in:hover{
+	color:#fff;
+}
+
+.admin{
+    width:100px;
+    font-size:10px;
+    text-align:center;
+    line-height:60px;
+    float:right;
+    }
+    .admin a:hover{
+     color:#FF3300;
+     }
+.banner-photo img{
+	width:100%;
+	height:700px;
+    
+    
+}
+.search{
+	height:45px;
+	width:638px;
+	background-color: #FF5722;
+	margin:5px auto;
+	padding-top:2px;
+}
+.search-na{
+	width: 629px;
+	height: 40px;
+	background-color: #fff;
+	margin:0px auto;
+
+}
+input{
+	height:30px;
+	padding-top:5px;
+	padding-left:5px;
+	padding-right:5px;
+}
+button{
+	width:50px;
+	height: 40px;
+	font-size:17px;
+	background-color:#ff5a5f;
+    padding-top:5px;
+    margin-left: 24px;
+    border-radius: 5px;
+
+}
+.content,.story{
+	width: 1100px;
+	height: 1000px;
+	margin:0 auto;
+	position:relative;
+	
+}
+.story{
+	width: 1100px;
+	height: 500px;
+	position:relative;
+}
+.top{
+	height: 50px;
+}
+.top-left{
+    width: 150px;
+    height: 50px;
+    float:left;
+    padding-top: 10px;
+}
+.top-center{
+	width: 400px;
+	height: 50px;
+	float:left;
+	padding-top: 25px;
+}
+.top-right{
+	width: 100px;
+	height: 35px;
+	line-height: 35px;
+	text-align:center;
+	float:right;
+	position:absolute;
+	top:15px;right:20px;
+	color:#888;
+	background-color: #ddd;
+	border-radius:25px;
+}
+.story .top-right{
+	top:40px;
+}
+.top-right:hover{
+	color:#fff;
+	background-color:#f30;
+}
+.top-right a:hover{
+	color:#fff;
+
+}
+
+.room{   
+	width: 440px;
+	height:300px;
+	background-color: #558B2F;
+	
+    float:left;
+	background-repeat: no-repeat;
+    padding-left: 10px;
+    margin-left:55px;
+    margin-bottom:20px;
+
+}
+.room:hover{
+	box-shadow: 2px 2px 10px #757575;
+}
+.content-first{
+	 clear:left;
+	 background-image: url(images/room1.jpg);
+}
+.content-second{
+	background-image: url(images/room2.jpg);
+}
+.content-third{
+	background-image: url(images/room3.jpg);
+}
+.content-fourth{
+	background-image: url(images/room4.jpg);
+}
+.content-fifth{
+	background-image: url(images/room5.jpg);
+}
+.content-sixth{
+	background-image: url(images/room6.jpg);
+}
+
+.room h1{
+      color:#fff;
+      font-weight:lighter;
+}
+.room a{
+	color:#fff;
+	
+}
+.room p{
+	color: #fff;
+	
+	padding-top: 5px;
+}
+.story-left img{
+	width:700px;
+	height:400px;
+	padding-bottom:30px;
+	float:left;
+}
+.story-right{
+	width: 400px;
+	height: 400px;
+	
+	float:left;
+}
+.story-right h1{
+	font-size: 27px;
+	color:#FF6F00;
+	text-align: center;
+	padding:10px;
+}
+span{
+	display: block;
+	text-indent:2em;
+	color:#888;
+    padding-left: 5px;
+}
+span a{
+    color:#09f;
+    float:right;
+}
+.safe{
+	height: 250px;
+	color:#fff;
+	background-color: #2196F3;
+	clear:left;
+	padding-top: 25px;
+}
+.safe-top{
+	text-align:center;
+	
+	margin:0 auto;
+}
+.safe-top p{
+	font-size: 10px;
+}
+.icon{
+	width:150px;
+	height: 150px;
+	text-align: center;
+	line-height: 150px;
+	float:left;
+	margin-left:155px;
+	margin-top:30px;
+}
+ .icon i {
+    
+	font-size:70px;
+   
+
+}
+.icon p{
+	font-size:25px;
+	padding-top:20px;
+}
+.icon:hover{
+	box-shadow: 2px 2px 4px #757575;
+	background-color: #90CAF9;
+}
+
+.footer{
+	background-color: #424242;
+	height: 165px;
+	margin-top: 10px;
+}
+
+.bottom{
+	width: 900px;
+	height: 40px;
+	
+	list-style: none;
+	display:block;
+	margin-left:200px;
+	padding-top: 30px;
+	border-bottom:1px solid #fff;
+	padding-left:100px;
+}
+.inter{
+	color:#888;
+	float:left;
+	font-size:15px;
+	padding:5px 5px;
+	border-right:1px solid #888; 
+}
+.inter:hover{
+	color:#f30;
+}
+.footer-bottom{
+	color:#888;
+	font-size:15px;
+	margin-left:200px;
+	padding-top:20px;
+}
+</style>
+</head>
+<body>
+	<div class="header">
+	  <div class="logo"><a href="Navbar.html"><img src="images/logo.jpg"></a></div>
+	  <div class="title"><h1 class="name">轻松短租网</h1></div>
+	  <ul class="navbar">
+	  	<li><a href="Navbar.html" class="show na">首页</a></li>
+	  	<li><a href="Characteristic.html" class="na">特色</a></li>
+	  	<li><a href="Story.html" class="na">故事</a></li>
+	  </ul>
+	  <div class="navbar-login in"><a href="Login.html" class="na-in">登录</a></div>
+	  <div class="navbar-regsiter in"><a href="Register.html" class="na-in">注册</a></div>
+	
+	  <div class="admin"><a href="gly.html">管理员登录</a></div>
+	</div>
+	<div class="banner">
+		<div class="banner-photo">
+			<img src="images/photo4.gif"> </div>
+	    <div class="search">
+	    	<div class="search-na">
+			 <form id="form7" name="form7" method="post" action="sousuo.html">
+              <tr>
+               <td>目的地:<input name="Adress"type=“text placeholder="city"></td>
+               <td>可住日期:<input name="Date" type=“text placeholder="in-date"></td>
+               
+               <td><button type="submit">搜索</button></td>
+              </tr>
+			 </form>
+	        </div>
+	    </div>
+	</div>
+	<div class="content">
+      <div class="top">
+		<div class="top-left"><h1 class="top">短租特色</h1></div>
+		<div class="top-center">若到江南赶上春，千万和春住。</div>
+		<div class="top-right"><a href="Characteristic.html">搜索更多</a><i class="fa fa-chevron-right"></i></div>
+	  </div>
+	    <div class="room-first img">
+		<div class="content-first room"><h1>别墅</h1><p>远离尘嚣，亲近自然</p></div>
+		<div class="content-second room"><h1>情侣房</h1><p>你侬我侬，忒煞多情，情多处，热似火</p></div></div>
+		<div class="room-second img">
+		<div class="content-third room"><h1>主题特色房</h1><p>个性·新奇·时尚</p></div>
+		<div class="content-fourth room"><h1>海景房</h1><p>避暑、疗养、休闲的胜地</p></div></div>
+		<div class="room-second img">
+		<div class="content-fifth room"><h1><a href="Buyy.html">商务套房</a></h1><p>大气·温馨·舒适</p></div>
+		<div class="content-sixth room"><h1>窑洞</h1><p>建筑是凝聚的音乐，音乐是流动的建筑。</p></div></div>
+	</div>
+	<div class="story">
+		<div class="top">
+		  <div class="top-left"><h1 class="top">短租故事</h1></div>
+		  <div class="top-center">寻找故事里的每一个人</div>
+		  <div class="top-right"><a href="Story.html">搜索更多</a><i class="fa fa-chevron-right"></i></div>
+		</div>
+		<div class="story-left"><img src="images/comment.jpg">
+		</div>
+		<div class="story-right"><h1>玩在北戴河，吃在大刘庄！</h1><span> 中秋假期，忙碌了3个多月的我终于有了一个可以放松的假期。儿子嚷嚷着想去海边已经很久了，这个假期我决定就满足儿子的愿望，带他去北戴河玩一玩！和老婆商量过后，我赶忙预订了我们一家三口的火车票。但是住哪又成了问题。儿子想要住海边，“越近越好！我要看星星！”。老婆想要住的舒服，“玩了一天肯定累，不好好睡一觉怎么行？”近海的酒店质量不好，质量好的星级酒店离海边远，这可愁坏我了。听同事说在线短租现在特火，我这80后也潮一把算了…<p><a href="http://www.muniao.com/show_story_922.html" target="_blank">[查看详情]</a></span></div>
+    </div>
+    <div class="safe">
+    	<div class="safe-top"><h1>让欣赏和信任悄然发生</h1><p>让完善的安全机制和信用机制，帮助房东和房客</p></div>
+      	<div class="first icon">
+      		<i class="fa fa-male"><p>双方身份验证</p></i>
+      	</div>
+      	<div class="second icon"><i class="fa fa-credit-card"><p>线上预订<br>线下交易</p></i></div>
+      	<div class="third icon"><i class="fa fa-shield"><p>坚实保障后盾</p></i></div>
+      	<div class="fourth icon"><i class="fa fa-comments-o"><p>点评积累信用</p></i></div>
+    </div>
+   	<div class="footer">
+		<ul class="bottom">
+			<li><a href="" class="inter">关于我们</a></li>
+		    <li><a href="" class="inter">联系我们</a></li>
+	        <li><a href="" class="inter">法律声明</a></li>
+            <li><a href="" class="inter">新手指南</a></li>
+            <li><a href="" class="inter">帮助中心</a></li>
+            <li><a href="" class="inter">加入我们</a></li>
+            <li><a href="" class="inter">新闻资讯</a></li>
+            <li><a href="" class="inter">网站地图</a></li>
+            <li><a href="" class="inter">短租房</a></li>
+            <li><a href="" class="inter">地标找短租</a>
+            </li>
+        </ul>
+        <div class="footer-bottom">
+        	<p>客服电话：400-056-0066&nbsp;客户服务：service@relaxduanzu.com&nbsp;意见反馈：feedback@relaxduanzu.com </p>
+        	<p>版权所有&nbsp;轻松短租&nbsp;网站备案/许可证号：冀ICP备12386556号-4</p>
+        	<p>河北网游有限公司</p>
+        </div>
+    </div>
+</body>
+</html>

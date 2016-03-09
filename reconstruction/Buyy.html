@@ -1,0 +1,499 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	 <title>订单信息</title>
+	<link rel="stylesheet" type="text/css" href="fa/css/font-awesome.min.css">
+	<style>
+	*{margin:0;padding:0;}
+body{
+
+      min-width: 1240;
+	  font-family:arial,"Microsoft Yahei","Hiragino Sans GB",sans-serif;
+}
+.header{
+	height: 60px;
+	background-color: #FFE0B2;
+}
+.logo{
+	margin-left: 100px;
+	float:left;
+}
+.logo img{
+	width: 100px;
+	height: 59px;
+}
+.title{
+	float:left;
+}
+.name{
+	color: #FF8F00;
+	padding-top:10px;
+}
+.navbar{
+	list-style: none;
+	display:block;
+	padding-left: 600px;
+}
+a{
+	text-decoration:none;
+	color:#000;
+}
+.na{   
+	width:70px;
+	height: 50px;
+	text-align:center;
+	line-height: 50px;
+    float:left;
+    margin-left: 10px; 
+      margin-top:5px; 
+      border-radius:5px;
+}
+.na:hover{
+	color:#FF3300;
+	background-color:#EEEEEE;
+
+	
+}
+.in{
+	text-align:center;
+	line-height: 35px;
+	float:left;
+	height:36px;
+	font-size:13px;
+	margin-top:12px;
+}
+.navbar-login{
+    width:150px;
+    
+    }
+ .in a:hover{
+    color:#FF3300;
+    }
+.out{
+    float:left;
+    margin:10px;
+    padding:10px;
+}
+.navbar-room{
+	width:140px;
+	height:36px;
+	text-align: center;
+	line-height: 36px;
+	border-radius:5px;
+	background-color:#FF3300; 
+	color:#fff;
+	float:left;
+	margin-top:10px;
+	/*margin-left:40px;*/
+}
+.navbar-room:hover{
+	background-color: #C62828;
+}
+.admin{
+    width:80px;
+    font-size:10px;
+    text-align:center;
+    line-height:60px;
+    float:right;
+    }
+.admin a:hover{
+     color:#FF3300;
+     }
+.main{
+	width: 1000px;
+	margin:10px auto;
+}
+.top{
+	
+	height: 40px;
+	background-color: #e0e0e0;
+	
+}
+.inner{
+	width: 300px;
+	color:#fff;
+	text-align: center;
+	line-height:40px;
+	font-size:20px;
+	float:left;
+	padding-right:10px;
+}
+.inner .fa{
+	padding-right: 7px;
+}
+.top-left{
+	background-color: #f60;
+}
+.icon{
+	color:#666;
+	font-size:20px;
+    float:left;
+    text-align: center;
+    line-height: 40px;
+    padding:0 5px;
+    
+}
+.center-left,.roomer-left{
+	height: 30px;
+	color:#fff;
+	font-size:15px;
+	background-color: #f60;
+	float:left;
+	margin-top:20px;
+	text-align:center;
+	line-height:30px;
+}
+.roomer-left{
+	clear:left;
+}
+.center-right,.roomer-right{
+	width:910px;
+	height:28px;
+	float:left;
+	margin-top:20px;
+	border-bottom:2px solid #f60 ;
+}
+.inroom-left{
+	float:left;
+}
+
+ table {
+ 	font-size: 12px;
+		border-collapse:collapse;
+		border-spacing:0;
+	width: 100%;
+	border:1px solid #ddd;
+	
+}
+.inroom-right{
+
+	float:right;
+}
+
+.roomer-inner table{
+		width:100%;
+}
+.inroom-right h1{
+	font-size: 20px;
+	font-weight: lighter;
+}
+  table th,table td{
+	padding:8px 0;
+	border-bottom:1px dashed  #ddd;
+}
+ table th{
+	width:150px;
+	padding-left:10px;
+	text-align:left;
+	border-right:1px solid #ddd;
+	color:#333;
+}
+.column-name{
+	width:140px;
+}
+.inroom th .ck{
+	margin:0 10px 4px 0;
+	*margin:0 10px 0 0;
+}
+caption{
+	line-height:38px;
+	height:38px;
+	padding-left:10px;
+	border-width:1px 1px 0 1px;
+	border-style:solid;
+	border-color:#ddd;
+	text-align:left;
+	background:#f8f8f8;
+}
+.roomer-inner a{
+	color:#2e7dcd;
+}
+ table td{
+	line-height:24px;
+	padding:8px 10px;
+	color:#999;
+	text-indent:1em;
+}
+ .link-detail-btn {
+display: inline-block;
+margin-left: 20px;
+	color: #2e7dcd;
+}
+.return-cash-ifno {
+display: inline-block;
+margin-right: 40px;
+color: #f60;
+}
+.yen,.money {
+color: #f60;
+font-weight: bold;
+}
+.roomer-right a{
+	color:#039BE5;
+}
+.roomer-right{
+    width:880px;
+	padding-left: 30px;
+	font-size: 10px;
+	line-height:30px;
+}
+em {
+	font-style: normal
+}
+select, input, button, button img, label {
+	vertical-align:middle;
+}
+.user-info .t-ipt {
+width: 140px;
+height: 18px;
+line-height: 18px;
+margin-right: 20px;
+padding: 2px 0 2px 2px;
+border: 1px solid #ddd;
+}
+.red{
+	color:red;
+	font-size:15px;
+}
+.submit{
+	width: 150px;
+	height:40px;
+	margin:30px auto;
+
+	
+	text-align: center;
+	line-height: 40px;
+}
+.submit-left{
+	width: 50px;
+	height:40px;
+	color:#FFF3E0;
+	background-color: #FFB74D;
+	float:left;
+	font-size: 15px;
+	border-bottom-left-radius:8px;
+	border-top-left-radius:8px;
+}
+.fa{
+    padding-top:10px;
+    }
+.submit-right{
+	width: 100px;
+	height: 40px;
+    border-top-right-radius:8px;
+    border-bottom-right-radius:8px;
+	background-color: #f60;
+	color:#FFE0B2;
+    float:left;
+   /* padding-top:10px;*/
+}
+.footer{
+	background-color: #EEEEEE;
+	height: 165px;
+	margin-top: 10px;
+}
+
+.bottom{
+	width: 900px;
+	height: 40px;
+	
+	list-style: none;
+	display:block;
+	margin-left:200px;
+	padding-top: 30px;
+	border-bottom:1px solid #fff;
+	padding-left:100px;
+}
+.inter{
+	color:#888;
+	float:left;
+	font-size:15px;
+	padding:5px 5px;
+	border-right:1px solid #888; 
+}
+.inter:hover{
+	color:#f30;
+}
+.footer-bottom{
+	color:#888;
+	font-size:15px;
+	margin-left:200px;
+	padding-top:20px;
+}
+	</style>
+</head>
+<body>
+	<div class="header" >
+	  <div class="logo"><a href="Navbar.html"><img src="images/logo.jpg"></a></div>
+	  <div class="title"><h1 class="name">轻松短租网</h1></div>
+	  <ul class="navbar">
+	  	<li><a href="Flogin.html" class=" na">首页</a></li>
+	  	<li><a href="Fcharacteristic.html" class="na">特色</a></li>
+	  	<li><a href="Fstory.html" class="na">故事</a></li>
+	  </ul>
+	  <div class="navbar-login in">null
+	  	<!-- <%=session.getAttribute("sessionName") %> -->
+	  	&nbsp;&nbsp;|&nbsp;<a href="grxx.html" class="na-in">个人中心</a></div>
+	  <div class="navbar-regsiter in"><a href="ddsou.html" class="na-in">我的订单</a>
+	 </div>
+	  <div class="out"><form><button type="submit"><a href="tuichu.html">退出</a></button></form></div>
+	  <div class="navbar-room">
+	  <a href="Room.html">免费发布房源</a></div>
+	   <div class="admin"><a href="gly.html">管理员登录</a></div>
+	</div>
+	<div class="main">
+	 <div class="top">
+	 	<div class="top-left inner"><i class="fa fa-pencil"></i>填写预订信息</div>
+	 	<div class="icon"><i class="fa fa-arrow-right"></i></div>
+	 	<div class="top-center inner"><i class="fa fa-shopping-cart"></i>支付定金</div>
+	 	<div class="icon"><i class="fa fa-arrow-right"></i></div>
+	 	<div class="top-right inner"><i class="fa fa-thumbs-o-up"></i>入住并评价</div>
+	 </div>
+	 <div class="center">
+	 <form id="form1" name="form1" method="post" action="Buyyls.html">
+	 	<div class="center-left">确定入住信息</div>
+	 	<div class="center-right"></div>
+	 	<div class="inroom">
+	 		<div class="inroom-left">
+           <table style="margin-top: -1px">
+        <tbody>
+            <tr>
+             <td class="column-name">入住日期</td>
+             <td colspan="2">
+              <div class="control-group">
+               <input class="t-ipt date" id="startDate" name="Startdate" type="text" value=""  dir="ltr">
+              </div>
+              <div class="controls-text">
+              (星期二)
+              <span>12:00以后办理入住</span>          
+              <span>早到可能需要等待</span>
+              </div>
+             </td>
+            </tr>
+            <tr>
+             <td class="column-name">退房日期</td>
+             <td colspan="2">
+              <div class="control-group">
+               <input class="t-ipt date" id="endDate" name="Enddate" type="text" value="2015-07-15" autocomplete="off" spellcheck="false" dir="ltr">
+               </div>
+               <div class="controls-text">
+                (星期三) 
+               <span>14:00以前办理退房</span>
+               </div>
+             </td>
+            </tr>
+            <tr>
+             <td class="column-name">入住天数</td>
+             <td style="color: #333" colspan="2">
+             <div class="control-group">
+               <input class="t-ipt date" id="endDate" name="Date" type="text" value="" autocomplete="off" spellcheck="false" dir="ltr">
+               </div></td>
+            </tr>
+            <tr>
+             <td class="column-name">房间数量</td>
+             <td colspan="2">
+              <div class="select-box selBookingCount">
+              <div><select id="selBookingCount" name="Number"><option selected="selected" value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              </select>
+              </div>
+              </div>
+              <span>套</span>
+             </td>
+            </tr>
+            <tr>
+             <td class="column-name">订单总价</td>
+             <td>
+             <span class="yen"></span><span class="money" id="spnBookingInfoUnitAmount"><div class="control-group">
+               <input class="t-ipt date" id="endDate" name="Price" type="text" value="" autocomplete="off" spellcheck="false" dir="ltr">
+               </div></span>
+          
+             </td>
+             <td>
+             <span class="return-cash-ifno j-detail-freepickupreturntastevoucher_o1" rel="freepickupreturntastevoucher-tip_o1"></span>
+             </td>
+            </tr>
+            <tr>
+             <td class="column-name">到店支付</td>
+             <td colspan="2"><span class="yen">面议</span></td>
+            </tr>
+            <tr class="price-total">
+             <td class="column-name">线上支付订金</td>
+             <td colspan="2"><span class="yen">¥</span><span class="money">100</span></td> 
+            </tr>   
+         </tbody>
+         </table></div>
+           <div class="inroom-right"><img src="images/room5.jpg"><h1>金梦海湾商务套房</h1><span>支付规则：线上预付定金，线下支付</span></div>
+	 	</div>
+	 	<div class="roomer">
+	 	<div class="roomer-left">填写房客信息</div>
+	 	<div class="roomer-right"></div>
+	 	<div class="roomer-inner">
+	 	 <table>
+	 	   <caption><a href="Login.html">登录轻松短租网，快速填写信息</a></caption>
+	 	   <tbody id="tbodyCustomerInfo">
+		   <tr>
+		   <th><b class="red">*</b>姓名</th>
+		    <td><input class="t-ipt"  id="OrderLinkmanList_0__Name" maxlength="20" name="Name" type="text" value="">
+            <span id="normalName"> </span>
+            <span class="validation-error dn" id="errorName">请填写真实的入住联系人姓名</span>
+			</td>
+			</tr>
+			<tr>
+			<th><b class="red ">*</b>手机</th>
+            <td><input class="t-ipt"  id="Mobile" maxlength="11" name="Phone" type="text" value="">
+            <span id="normalMobile">未注册手机下单后自动注册，登录后验证手机</span>
+             <div class="errorInfo warn dn">该手机号被注册过，<a href="Login.html">可登录</a>后预订</div><span class="validation-error dn" id="errorMobile">请填写有效手机号码,我们将通过此号码与您取得联系</span>
+            </td>
+		    </tr>
+			<tr>
+			<th><b class="red">*</b>入住人数</th>
+			<td><div class="spinner-box">
+			<em class="spinner-down" id="turndown"></em><input type="text" name="People" id="PeopleCount1" class="spinner-input" value="1" maxpeoplecount="5"><em class="spinner-up-able" id="turnup"></em><span style="line-height: 24px; padding: 2px 0; vertical-align: top; margin-left: 20px">酒店也可为港澳台和外籍客人提供服务</span>
+             </div>
+			</td>
+			</tr>
+			<tr>
+			<th>E-mail</th>
+			 <td><input class="t-ipt" data-val="true" data-val-regex="E-mail 格式错误" data-val-regex-pattern="[A-Za-z0-9._%+-]+@([a-zA-Z0-9_-])+(\.[a-zA-Z0-9_-]+)+" id="OrderLinkmanList_0__Email" maxlength="50" name="Email" type="text" value="">
+              <span class="field-validation-valid" data-valmsg-for="OrderLinkmanList[0].Email" data-valmsg-replace="true"></span><span>填写邮箱，下单后登录轻松短租网完成邮箱验证</span>
+             </td>
+			</tr>
+            </tbody>
+	 	 </table>
+	 	 </div>
+	 </div>
+        <div class="submit">
+        	<div class="submit-left">
+        	<i class="fa fa-check"></i></div>
+        	<div class="submit-right"><label> 
+       <input name="Submit" type="submit"  value="提交订单" />
+       </label></div>
+        </div>
+        </form>
+	 </div>
+	</div>
+	<div class="footer">
+		<ul class="bottom">
+			<li><a href="" class="inter">关于我们</a></li>
+		    <li><a href="" class="inter">联系我们</a></li>
+	        <li><a href="" class="inter">法律声明</a></li>
+            <li><a href="" class="inter">新手指南</a></li>
+            <li><a href="" class="inter">帮助中心</a></li>
+            <li><a href="" class="inter">加入我们</a></li>
+            <li><a href="" class="inter">新闻资讯</a></li>
+            <li><a href="" class="inter">网站地图</a></li>
+            <li><a href="" class="inter">短租房</a></li>
+            <li><a href="" class="inter">地标找短租</a>
+            </li>
+        </ul>
+        <div class="footer-bottom">
+        	<p>客服电话：400-056-0066&nbsp;客户服务：service@relaxduanzu.com&nbsp;意见反馈：feedback@relaxduanzu.com </p>
+        	<p>版权所有&nbsp;轻松短租&nbsp;网站备案/许可证号：冀ICP备12386556号-4</p>
+        	<p>河北网游有限公司</p>
+        </div>
+    </div>
+</body>
+</html>

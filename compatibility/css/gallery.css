@@ -1,0 +1,38 @@
+.gallery{
+	color:#cc2700;
+}
+.image{
+	padding: 22px 0 10px 0;
+}
+.content-top li{
+    float:left;
+    padding-top:30px;  
+}
+.img{
+	padding-right: 30px;
+}
+.main_fifth{
+	margin-bottom:30px;
+}
+.content-bottom .submit{
+	clear:left;
+	margin-bottom:60px;
+}
+.sidebar ul{
+    float:left;
+    margin-left: 20px;
+}
+.sidebar li{
+    height:34px;
+    list-style: none;
+    font-style: italic;
+    font-size: 14px;
+    line-height:34px;
+    color:#fffff2; 
+        
+}
+.icon{border-bottom: 2px dotted #3c3d3d;}
+i{
+    padding-top:11px;
+    padding-right:16px;
+   }
