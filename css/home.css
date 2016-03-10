@@ -12,8 +12,7 @@ header{
 }
 .inner{
 	width: 90%;
-	margin:0 auto;
-	
+	margin:0 auto;	
 }
 .header{
 	line-height: 9rem;
@@ -25,6 +24,7 @@ header .logo{
 	padding:0 12.0939%;
 	float:left;
 	color:#fff;
+	cursor:pointer;
 }
 header h2{
 	font-family: 中山行书百年纪念版;

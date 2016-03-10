@@ -1,0 +1,46 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>无标题文档</title>
+<style type="text/css">
+#box{width:640px;height:384px;margin:0 auto;position:relative;overflow:hidden;}
+img{width:428px;height:384px;position:absolute;border:1px solid #fff;}
+</style>
+</head>
+<body>
+	<div id="box">
+		<img src="pic/pic1.jpg" />
+		<img src="pic/pic2.jpg" />
+		<img src="pic/pic3.jpg" />
+		<img src="pic/pic4.jpg" />
+		<img src="pic/pic5.jpg" />
+		<img src="pic/pic6.jpg" />
+		<img src="pic/pic7.jpg" />
+		<img src="pic/pic8.jpg" />
+	</div>
+<script type="text/javascript" src="jquery-1.11.1.js"></script>
+<script type="text/javascript">
+
+	for(var i = 0;i<8;i++){
+		$("img").eq(i).css({"z-index":i,"left":(80*i)+"px"})	
+	}
+	
+	$("img").hover(function(){
+		var n = $(this).index();
+		for(var i = 0;i<=n;i++){
+			$("img").eq(i).stop().animate({"left":(30*i)+"px"},300)
+		}
+		for(var i = n+1;i<8;i++){
+			$("img:eq("+(i)+")").stop().animate({"left":(30*i+400)+"px"},300)
+		}
+			
+	},function(){
+		for(var i = 0;i<8;i++){
+			$("img").eq(i).stop().animate({"z-index":i,"left":(80*i)+"px"})	
+		}
+	})
+
+</script>
+</body>
+</html>
